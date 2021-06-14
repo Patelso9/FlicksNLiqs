@@ -21,8 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap" rel="stylesheet">
 
   <!-- CSS files -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/animation.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/animation.css">
 
   <title>Flicks&Liqs</title>
 
@@ -30,9 +30,27 @@
 
 <body>
 
+  <!-- navbar -->
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <h1 class="display-4">Flicks & Liqs</h1>
+    </a>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log Out</a>
+      </li>
+    </ul>
+</nav>
+
 <!-- Jumbotron -->
 
-    <div id="Jumbotron">
+    <!-- <div id="Jumbotron">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4">Flicks & Liqs</h1>
@@ -43,7 +61,7 @@
 
             </div>
           </div>
-    </div>
+    </div> -->
 
 <!-- Content -->
     <div class="container">
@@ -57,6 +75,7 @@
             <div class="movie-search">
               <input id="movie">
               <button id="search-movie" class="btn btn-danger btn-sm">Search</button>
+              <button id="save-movie" class="btn btn-danger btn-sm">Save Flick</button>
                 <hr>
                 <div class="card">
                   <div class="card-body">
@@ -76,7 +95,11 @@
             <h2 class="card-title">
               <button type="button" class="btn btn-outline-danger" id="cocktail-button">Liqs</button>
             </h2>
-            <br>
+            <div class="drink-search">
+              <input id="drink">
+              <button id="search-drink" class="btn btn-danger btn-sm">Search</button>
+              <button id="save-drink" class="btn btn-danger btn-sm">Save Liq</button>
+            </div>
             <hr>
             <div class="card" >
                 <div class="card-body">
@@ -94,7 +117,7 @@
 
       <footer>
         <hr>
-        &#10024; Mental health is an importnant part of your academic success.&#10024; 
+        &#10024; Mental health is important &#10024; 
         <br> Make sure you take time to un-&#127863 daily. 
       </footer>
 
@@ -103,11 +126,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 <!-- JS files -->
-<script src ="./assets/js/movie-list.js"></script>
-<script src ="./assets/js/search-result.js"></script>
-<script src ="./assets/js/random-movie.js"></script>
-<script src ="./assets/js/random-drink.js"></script>
-<script src ="./assets/js/drinks-function.js"></script>
+<script src ="../assets/js/movie-list.js"></script>
+<script src ="../assets/js/search-result.js"></script>
+<script src ="../assets/js/random-movie.js"></script>
+<script src ="../assets/js/random-drink.js"></script>
+<script src ="../assets/js/drinks-function.js"></script>
 
 </body>
 </html>
