@@ -25,6 +25,21 @@ h2{
     font-weight: bold;
 }
 
+.navbar {
+    background-color: var(--navback);
+    margin-bottom: 30px;
+}
+
+.display-4{
+    font-family: 'Monoton', cursive;
+    color: var(--navtext);
+    }
+    .nav-link{
+        font-family: 'Indie Flower', cursive;
+        color: var(--navtext);
+    }
+
+/* 
 .jumbotron {
     background-color: var(--navback);
     color: var(--navtext);
@@ -35,7 +50,8 @@ h2{
     }
     .lead{
         font-family: 'Indie Flower', cursive;
-    }
+    } 
+*/
 
 .card{
     background-color: rgba(211, 200, 200, 0.527);
@@ -53,7 +69,10 @@ h2{
     margin-top: 5px;
 }
 
-#search-movie{
+#search-movie,
+#search-drink,
+#save-movie,
+#save-drink{
     background-color: var(--navback);
 }
 
