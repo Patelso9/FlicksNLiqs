@@ -4,6 +4,8 @@ const session = require("express-session");
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 
+// Requiring passport as we've configured it
+const passport = require("./config/passport");
 
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 2020;
@@ -17,7 +19,8 @@ app.use(express.static("public"));
 app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
 );
-
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Requiring our routes
 app.use(routes);
