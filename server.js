@@ -1,12 +1,12 @@
 // Requiring necessary npm packages
 const express = require("express");
 const session = require("express-session");
-const routes = require('./controllers');
-const sequelize = require('./config/connection');
+const routes = require('./chelsea/login/controllers');
+const sequelize = require('./chelsea/login/config/connection');
 
 
 // Setting up port and requiring models for syncing
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 2020;
 
 // Creating express app and configuring middleware needed for authentication
 const app = express();

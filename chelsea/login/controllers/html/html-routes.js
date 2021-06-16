@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const path = require("path");
-//const isAuthenticated = require("../../config/middleware/isAuthenticated");
+const isAuthenticated = require("../../config/middleware/isAuthenticated");
 
 // GET all galleries for homepage
 router.get("/", (req, res) => {
@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
   if (req.user) {
     res.redirect("/home");
   }
-  res.sendFile(path.join(__dirname, "chelsea/login/public/signup.html"));
+  res.sendFile(path.join(__dirname, "../../public/signup.html"));
 });
 
 router.get("/login", (req, res) => {
@@ -18,15 +18,15 @@ router.get("/login", (req, res) => {
   if (req.user) {
     res.redirect("/home");
   }
-  res.sendFile(path.join(__dirname, "chelsea/login/public/login.html"));
+  res.sendFile(path.join(__dirname, "../../public/login.html"));
 });
 
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
-router.get("/members", isAuthenticated, (req, res) => {
-  console.log("GET /members");
+router.get("/home", isAuthenticated, (req, res) => {
+  console.log("GET /home");
   // console.trace();
-  res.sendFile(path.join(__dirname, "Main/html.home.html"));
+  res.sendFile(path.join(__dirname, "../../public/home.html"));
 });
 
 module.exports = router;
