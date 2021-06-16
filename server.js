@@ -1,8 +1,8 @@
 // Requiring necessary npm packages
 const express = require("express");
 const session = require("express-session");
-const routes = require('./chelsea/login/controllers');
-const sequelize = require('./chelsea/login/config/connection');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
 
 
 // Setting up port and requiring models for syncing
