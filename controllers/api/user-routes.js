@@ -61,4 +61,23 @@ router.get("/logout", (req, res) => {
   }
 });
 
+
+// trying route to save movie 
+// Save movie
+// router.post("/profile", async (req, res) => {
+//   console.log("POST /api/user/profile");
+//   try {
+//     const dbUserData = await User.create({
+//       movieTitle:req.body.title,
+//     });
+
+//     res.redirect(307, "/api/user/profile");
+//     // Or redirect to profile web page
+//     // res.redirect("/profile");
+//   } catch (err) {
+//     console.log(err.errors[0]);
+//     res.status(500).json({ messge: err.errors[0]["message"]});
+//   }
+// });
+
 module.exports = router;
