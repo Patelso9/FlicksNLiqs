@@ -40,7 +40,7 @@
         <a class="nav-link disabled" aria-current="page" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"> <span class="member-name"></span></a>
+        <a class="nav-link" href="profile.html"> Profile</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/api/user/logout">Log Out</a>
@@ -48,20 +48,6 @@
     </ul>
 </nav>
 
-<!-- Jumbotron -->
-
-    <!-- <div id="Jumbotron">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Flicks & Liqs</h1>
-              <br>
-              <p class="lead">Tired from a long day of coding?</p>
-                <br> 
-                <p class="lead" id="type">Take a load off with a movie and cocktail</p>
-
-            </div>
-          </div>
-    </div> -->
 
 <!-- Content -->
     <div class="container">
@@ -75,6 +61,7 @@
             <div class="movie-search">
               <input id="movie">
               <button id="search-movie" class="btn btn-danger btn-sm">Search</button>
+              <input id="movie-save">
               <button id="save-movie" class="btn btn-danger btn-sm">Save Flick</button>
                 <hr>
                 <div class="card">
@@ -97,8 +84,9 @@
             </h2>
             <div class="drink-search">
               <input id="drink">
-              <button id="search-drink" class="btn btn-danger btn-sm">Search</button>
-              <button id="save-drink" class="btn btn-danger btn-sm">Save Liq</button>
+              <button type="button" id="search-drink" class="btn btn-danger btn-sm">Search</button> 
+              <input id="drink-save">
+              <button type="button" id="save-drink" class="btn btn-danger btn-sm">Save Liq</button>
             </div>
             <hr>
             <div class="card" >
@@ -117,7 +105,6 @@
 
       <footer>
         <hr>
-        <h2>Welcome!  <span class="member-name"></span></h2>
         &#10024; Mental health is important &#10024; 
         <br> Make sure you take time to un-&#127863 daily. Copyright © 2021
       </footer>
@@ -132,7 +119,9 @@
 <script src ="assets/js/random-movie.js"></script>
 <script src ="assets/js/random-drink.js"></script>
 <script src ="assets/js/drinks-function.js"></script>
+<script src ="assets/js/search-drink.js"></script>
 <script src ="assets/js/members.js"></script>
+<!-- <script src ="assets/js/save-movie.js"></script> -->
 
 
 

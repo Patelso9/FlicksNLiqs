@@ -21,6 +21,16 @@ router.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "../../public/login.html"));
 });
 
+// trying route to save movie
+// router.get("/profile", (req, res) => {
+//   console.log("GET /profile");
+//   // send to profile page 
+//   if (req.user) {
+//     res.redirect("/profile");
+//   }
+//   res.sendFile(path.join(__dirname, "../../public/profile.html"));
+// });
+
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
 router.get("/home", isAuthenticated, (req, res) => {
