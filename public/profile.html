@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap" rel="stylesheet">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../Main/assets/css/style.css">
+    <link rel="stylesheet" href="../Main/assets/css/animation.css">
+
+    <title>Flicks&Liqs</title>
+
+</head>
+
+<body>
+<!--Nav bAr-->
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <h1 class="display-4">Flicks & Liqs</h1>
+        </a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log Out</a>
+          </li>
+        </ul>
+    </nav>
+
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Profile -->
+            <div class="col">
+                <h2 class="card-title">
+                    <button id="rand-movie" class="btn btn-outline-danger">My Profile</button>
+                </h2>
+                <div class="movie-search">
+
+                    <hr>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="username">Username:</h2>
+                           <hr>
+                           <h2>Welcome!  <span class="member-name"></span></h2>
+                            <p id="ratings"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Movie Search -->
+            <div class="col">
+                <h2 class="card-title">
+                    <button id="rand-movie" class="btn btn-outline-danger">Flicks</button>
+                </h2>
+                <div class="movie-search">
+    
+                    <hr>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="past-flick">Past Flicks</h2>
+                            <hr>
+                            <h2 id="title"></h2>
+                            <img id="movie-img" src="">
+                            <hr>
+                            <p id="genre"></p>
+                            <p id="plot"></p>
+                            <p id="ratings"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocktail Randomizer -->
+            <div class="col">
+                <h2 class="card-title">
+                    <button type="button" class="btn btn-outline-danger" id="cocktail-button">Liqs</button>
+                </h2>
+                <hr>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 id="past-drink">Past Cocktails</h2>
+                        <hr>
+                        <h2 id="name"></h2>
+                        <img id="drink-img" src="">
+                        <hr>
+                        <p id="ingredient"></p>
+                        <p id="direction"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <hr>
+        &#10024; Mental health is an importnant part of your academic success.&#10024;
+        <br> Make sure you take time to un-&#127863 daily. Copyright © 2021
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <!-- JS files -->
+
+
+</body>
+
+</html>
