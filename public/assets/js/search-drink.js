@@ -6,14 +6,27 @@ var drinkNameEl = document.getElementById('name');
 var drinkIngredientEl = document.getElementById('ingredient');
 var drinkDirectionEl = document.getElementById('direction');
 
+
+// doesn't work :(
+    
 function apiDrink() {
-    var drinkSearch = searchDrinkEl.nodeValue;
+    var drinkSearch = searchDrinkEl.value;
     console.log(drinkSearch);
 
     // fetch Api
-    $.getJson("www.thecocktaildb.com/api/json/v1/1/search.php?s=")
-    then(function (response) {
-        console.log(respone)
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + drinkSearch)
+    .then(function (response){
+       console.log(response) 
+       if (response.status !== 200){
+            return;
+            
+        }
+        response.json().then(function (data) {
+            console.log(data)
+            apiDrink(data);
+        })
+        
+    
 
         drinkNameEl.innerHTML = "";
         drinkIngredientEl.innerHTML = "";
@@ -43,7 +56,8 @@ function apiDrink() {
 
   
     //   }
+
     });
 }
-
+apiDrink();
 document.getElementById('search-drink').addEventListener('click', apiDrink);
