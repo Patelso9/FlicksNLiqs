@@ -8,7 +8,7 @@ var drinkDirectionEl = document.getElementById('direction');
 
 
 // doesn't work :(
-    
+
 function apiDrink() {
     var drinkSearch = searchDrinkEl.value;
     console.log(drinkSearch);
