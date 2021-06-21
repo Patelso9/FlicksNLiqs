@@ -86,4 +86,10 @@ h2,h1,h3{
 }
 
 
-
+#film-save, #liq-save{
+    color:rgb(116, 16, 16);
+}
+ 
+#drink-input, #movie-input{
+    background-color: rgba(211, 200, 200, 0.527);
+}
