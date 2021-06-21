@@ -3,6 +3,7 @@ $(document).ready(() => {
     // and updates the HTML on the page
     $.get("/api/user/user_data").then(data => {
       $(".member-name").text(data.name);
+      $(".member-email").text(data.email);
     });
   });
   

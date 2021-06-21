@@ -23,9 +23,7 @@
 
     <!-- CSS files -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animation.css"> 
-    
-   
+    <link rel="stylesheet" href="assets/css/animation.css">
 
     <title>Flicks&Liqs</title>
 
@@ -38,11 +36,11 @@
           <h1 class="display-4">Flicks & Liqs</h1>
         </a>
         <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="/api/user/home">Home</a>
+            </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile.html">Profile</a>
+            <a class="nav-link disabled" aria-current="page" href="#">Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/api/user/logout">Log Out</a>
@@ -54,8 +52,26 @@
     <!-- Content -->
     <div class="container">
         <div class="row">
-    
-            <!-- Movie -->
+
+            <!-- Profile -->
+            <div class="col">
+                <h2 class="card-title">
+                    My Profile
+                </h2>
+                <div class="movie-search">
+
+                    <hr>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="username">Username:<span class="member-name"></span></h2>
+                           <h2 id="email">Email:<span class="member-email"></span></h2>
+                            <p id="ratings"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Movie Search -->
             <div class="col">
                 <h2 class="card-title">
                     <button id="rand-movie" class="btn btn-outline-danger">Flicks</button>
@@ -110,8 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
     <!-- JS files -->
-<script src ="assets/js/members.js"></script>
-<script src ="assets/js/localstorage.js"></script>
+    <script src ="assets/js/members.js"></script>
 
 </body>
 

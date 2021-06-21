@@ -5,23 +5,18 @@
 $(document).ready(() => {
     // Getting references save movie
     const saveMovie = $("input#movie-save");
-  
     // When the button is click
     saveMovie.on("save-movie", event => {
       event.preventDefault();
       const userData = {
         movieTitle: titleInput.val().trim(),
-        
       };
-  
     // //   if (!userData.email || !userData.password) {
     // //     return;
     //   }
-      
       saveUserMovie(userData.movieTitle);
       titleInput.val("");
     });
-  
     // Does a post to the signup route. If successful, we are redirected to the members page
     // Otherwise we log any errors
     function saveUserMovie(name) {
@@ -35,7 +30,6 @@ $(document).ready(() => {
         })
         .catch(handleLoginErr);
     }
-  
     // function handleLoginErr(err) {
     //   console.log("signup - handleLoginErr")
     //   $("#alert .msg").text(err.message);
@@ -44,4 +38,3 @@ $(document).ready(() => {
     //   });
     // }
   });
-  
