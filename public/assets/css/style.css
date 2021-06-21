@@ -27,9 +27,15 @@ h2,h1,h3,label{
 
 label{
    font-size: 15px;
+
 }
 
-.navbar {
+.userinfo{
+    font-family: 'Indie Flower', cursive;
+    color: black;
+}
+
+.navbar{
     background-color: var(--navback);
     margin-bottom: 30px;
 }
