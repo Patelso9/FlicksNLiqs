@@ -40,6 +40,10 @@ label{
     margin-bottom: 30px;
 }
 
+.form-control{
+    font-size: 18px;
+}
+
 .display-4{
     font-family: 'Monoton', cursive;
     color: var(--navtext);
