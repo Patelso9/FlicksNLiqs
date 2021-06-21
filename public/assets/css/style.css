@@ -25,6 +25,10 @@ h2,h1,h3,label{
     font-weight: bold;
 }
 
+label{
+   font-size: 15px;
+}
+
 .navbar {
     background-color: var(--navback);
     margin-bottom: 30px;
