@@ -1,3 +1,7 @@
+// Does not work :/
+
+
+
 // find cocktail input
 var searchDrinkEl = document.getElementById("drink");
 
@@ -8,7 +12,7 @@ var drinkDirectionEl = document.getElementById('direction');
 
 
 // doesn't work :(
-    
+
 function apiDrink() {
     var drinkSearch = searchDrinkEl.value;
     console.log(drinkSearch);
