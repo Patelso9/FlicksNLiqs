@@ -20,7 +20,8 @@ img{
     
 }
 
-h2,h1,h3,label{
+
+h2,h1,h3{
     color: var(--navback);
     font-weight: bold;
 }

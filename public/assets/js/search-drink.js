@@ -1,10 +1,11 @@
-// Does not work :/
-
 // find cocktail input
 var searchDrinkEl = document.getElementById("drink");
 
+// find results 
+var drinkNameEl = document.getElementById('name');
+var drinkIngredientEl = document.getElementById('ingredient');
+var drinkDirectionEl = document.getElementById('direction');
 
-// doesn't work :(
 
 function apiDrink() {
     var drinkSearch = searchDrinkEl.value;
@@ -22,8 +23,7 @@ function apiDrink() {
     //         console.log(data)
     //         apiDrink(data);
     //     })
-        
-    
+
         drinkNameEl.innerHTML = "";
         drinkIngredientEl.innerHTML = "";
         drinkDirectionEl.innerHTML = "";
@@ -48,7 +48,6 @@ function apiDrink() {
 
     //         ingredient = cocktail.drinks[0][`strIngredient${i}`] + ' : ' + cocktail.drinks[0][`strMeasure${i}`];
     //         drinkIngredientEl.append(ingredient);
-
     //   }
 
     var drinkName = document.createElement("h3");
@@ -72,6 +71,14 @@ function apiDrink() {
     var instructions = document.createElement("p");
     instructions = cocktail.drinks[0].strInstructions;
     drinkDirectionEl.append(instructions);   
+
+    });
+}
+
+
+
+  
+    //   }
 
     });
 }
