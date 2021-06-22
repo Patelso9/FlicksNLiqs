@@ -80,7 +80,4 @@ function apiDrink() {
   
     //   }
 
-    });
-}
-
 document.getElementById('search-drink').addEventListener('click', apiDrink);
