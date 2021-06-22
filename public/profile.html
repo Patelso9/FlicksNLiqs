@@ -24,8 +24,7 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animation.css"> 
-    
-   
+
 
     <title>Flicks&Liqs</title>
 
@@ -38,6 +37,7 @@
           <h1 class="display-4">Flicks & Liqs</h1>
         </a>
         <ul class="nav justify-content-end">
+
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="home.html">Home</a>
           </li>
@@ -50,21 +50,38 @@
         </ul>
     </nav>
 
-    <h1>Welcome!  <span class="member-name"></span></h1>
+    <!-- <h1>Welcome!  <span class="member-name"></span></h1> -->
     <!-- Content -->
     <div class="container">
+        
+        <!-- Profile -->
         <div class="row">
-    
-            <!-- Movie -->
             <div class="col">
-                <h2 class="card-title">
-                    <button id="rand-movie" class="btn btn-outline-danger">Flicks</button>
-                </h2>
-                <div class="movie-search">
-                    <hr>
+                <!-- <h2 class="card-title">
+                    My Profile
+                </h2> 
+                <hr> -->
+                <div class="profile-info">
+
                     <div class="card">
                         <div class="card-body">
-                            <h2 id="past-flick">Past Flicks</h2>
+                            <h2 id="username">Username:  <span class="member-name userinfo"></span></h2>
+                           <h2 id="email">Email:  <span class="member-email userinfo"></span></h2>
+                            <p id="ratings"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <hr>
+
+        <div class="row">
+            <!-- Movie Search -->
+            <div class="col">
+                <div class="movie-saved">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="past-flick">Saved Flicks</h2>
                             <hr>
                             <input placeholder="save movie" id="movie-input">  <button id="film-save"><i class="far fa-save"></i></button> 
                             <hr>
@@ -76,13 +93,10 @@
 
             <!-- Cocktail  -->
             <div class="col">
-                <h2 class="card-title">
-                    <button type="button" class="btn btn-outline-danger" id="cocktail-button">Liqs</button>
-                </h2>
-                <hr>
                 <div class="card">
                     <div class="card-body">
-                        <h2 id="past-drink">Past Cocktails</h2>
+                        <h2 id="past-drink">Saved Cocktails</h2>
+
                         <hr>
                         <input placeholder="save drink" id="drink-input">  <button id="liq-save"><i class="far fa-save"></i></button> 
                         <hr>
@@ -101,7 +115,9 @@
 
     <footer>
         <hr>
-        &#10024; Mental health is an importnant part of your academic success.&#10024;
+
+        &#10024; Mental health is important. &#10024;
+
         <br> Make sure you take time to un-&#127863 daily. Copyright © 2021
     </footer>
 
@@ -110,8 +126,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
     <!-- JS files -->
+
 <script src ="assets/js/members.js"></script>
 <script src ="assets/js/localstorage.js"></script>
+
 
 </body>
 

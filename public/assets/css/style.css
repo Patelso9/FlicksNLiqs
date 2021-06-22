@@ -20,14 +20,29 @@ img{
     
 }
 
+
 h2,h1,h3{
     color: var(--navback);
     font-weight: bold;
 }
 
-.navbar {
+label{
+   font-size: 15px;
+
+}
+
+.userinfo{
+    font-family: 'Indie Flower', cursive;
+    color: black;
+}
+
+.navbar{
     background-color: var(--navback);
     margin-bottom: 30px;
+}
+
+.form-control{
+    font-size: 18px;
 }
 
 .display-4{

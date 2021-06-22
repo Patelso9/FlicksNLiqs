@@ -5,12 +5,13 @@
 $(document).ready(() => {
     // Getting references save movie
     const saveMovie = $("input#movie-save");
-  
+
     // When the button is click
     saveMovie.on("save-movie", event => {
       event.preventDefault();
       const userData = {
         movieTitle: titleInput.val().trim(),
+
         
       };
   
@@ -35,7 +36,7 @@ $(document).ready(() => {
         })
         .catch(handleLoginErr);
     }
-  
+
     // function handleLoginErr(err) {
     //   console.log("signup - handleLoginErr")
     //   $("#alert .msg").text(err.message);
@@ -44,4 +45,4 @@ $(document).ready(() => {
     //   });
     // }
   });
-  
+

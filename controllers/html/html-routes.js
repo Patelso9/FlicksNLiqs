@@ -21,6 +21,7 @@ router.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "../../public/login.html"));
 });
 
+
 // trying route to save movie
 // router.get("/profile", (req, res) => {
 //   console.log("GET /profile");
@@ -38,5 +39,40 @@ router.get("/home", isAuthenticated, (req, res) => {
   // console.trace();
   res.sendFile(path.join(__dirname, "../../public/home.html"));
 });
+
+
+
+
+
+
+
+
+// trying route to save movie
+router.get("/profile", (req, res) => {
+  console.log("GET /profile");
+  // send to profile page 
+  if (req.user) {
+    res.redirect("/profile");
+  }
+  res.sendFile(path.join(__dirname, "../../public/profile.html"));
+});
+
+
+// redirect from home to profile page
+router.get("/profile", (req, res) => {
+  console.log("GET /profile");
+  // If the user already has an account send them to the members page
+  if (req.user) {
+    res.redirect("/profile");
+  }
+  res.sendFile(path.join(__dirname, "../../public/home.html"));
+});
+
+
+
+
+
+
+
 
 module.exports = router;
