@@ -15,16 +15,16 @@ Cocktails are like a present you give to yourself
 HTML, CSS, Java Script, Bootstrap, node, express, mySQL, passport, sequelize    
 
 ## Breakdown of tasks and roles
-* 1 person in charge of working with passport integration and routing
+* 2 people worked on the backend and integrating packages (passport, mysql)
 * 1 person in charge of HTML & CSS
 
 ## Challenges
 * Difficulty with pushing files worked on by multiple people in github, maanaged through it later in the project. 
 
-## Successes
-* Login & sign up works!
-* Profile page works!
-* Personalization works!
+## Updates from last deployment
+* Included a login & sign up function utelizing passport
+* Added a profile page with personlalization
+* Added search function for cocktails
 
 ## Links
 
